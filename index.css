@@ -1,9 +1,39 @@
-html{
+html, body {
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
-  body {
-      font-family: 'Poppins', sans-serif;
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 1200px) {
+    body {
+        font-size: 18px;
     }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Ensure all elements stay within the viewport */
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
   
     .hamburger div {
       transition: transform 0.3s ease, opacity 0.3s ease;
